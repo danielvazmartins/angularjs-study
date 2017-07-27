@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="helloApp">
+<head>
+	<title>Angular JS Hello World</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+	<script type="text/javascript" src="./js/app.js"></script>
+	<script type="text/javascript" src="./js/helloController.js"></script>
+</head>
+<body ng-controller="HelloController">
+	<p>Utilizando o ng-model para salvar dados no $scope</p>
+	<input type="text" ng-model="name" placeholder="Digite um texto">
+	<p ng-non-bindable>O variavel do $scope é lida através do angular expression {{variavel}}</p>
+	<p>Utilizamos a diretiva ng-non-bindable para mostrar blocos de códigos sem renderizar.</p>
+	<label>Binding do input: <span>{{name}}</span></label>
+	<br>
+	<label>Binding do controller: <span>{{hello}}</span></label>
+</body>
+</html>
