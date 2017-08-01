@@ -5,8 +5,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
 	<script type="text/javascript" src="./js/app.js"></script>
 	<script type="text/javascript" src="./js/helloController.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
 </head>
-<body ng-controller="HelloController">
+<body class="container" ng-controller="HelloController">
+	<h1 >AngularJS</h1>
 	<p>Utilizando o ng-model para salvar dados no $scope</p>
 	<input type="text" ng-model="name" placeholder="Digite um texto">
 	<p ng-non-bindable>O variavel do $scope é lida através do angular expression {{variavel}}</p>
