@@ -14,3 +14,7 @@ Aplicação básica para incluir o Angular, criar um modulo e uma controller
 ## ngroute
 Utilizando o ngRoute para contruir uma SPA (Single Page Application)
 
+## Projetos para verificar
+-- ui-router - https://github.com/angular-ui/ui-router
+-- http - https://www.w3schools.com/angular/angular_http.asp
+-- restangular - https://github.com/mgonto/restangular

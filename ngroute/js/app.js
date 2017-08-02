@@ -6,7 +6,8 @@ var app = angular.module('helloApp', ['ngRoute']);
 app.config(function($routeProvider) {
 	$routeProvider
 	.when('/', {
-		templateUrl: '/js/views/main.html'
+		templateUrl: '/js/views/main.html',
+		controller: 'mainController'
 	})
 	.when('/viewA', {
 		templateUrl: '/js/views/viewA.html'
@@ -15,6 +16,8 @@ app.config(function($routeProvider) {
 		templateUrl: '/js/views/viewB.html'
 	})
 	.when('/viewC', {
-		templateUrl: '/js/views/viewC.html'
+		template: '<h3>View C</h3><p>Utilizando "template" do ngRoute</p>'
+	}).otherwise({
+		template: '<h3>Not Found</h3><p>Utilizando o "otherwise" do ngRoute</p>'
 	});
 });
