@@ -7,7 +7,13 @@ app.config(function($stateProvider) {
 	$stateProvider
 	.state('main', {
 		url: '/',
-		templateUrl: '/js/views/main.html'
+		templateUrl: '/js/views/main.html',
+		controller: 'MainController',
+		resolve: {
+			colors: function() {
+				return {'colors': 'azul'}
+			}
+		}
 	})
 	.state('viewA', {
 		url: '/viewA',
@@ -15,7 +21,7 @@ app.config(function($stateProvider) {
 	})
 	.state('viewB', {
 		url: '/viewB',
-		templateUrl: '/js/views/viewB.html'
+		templateUrl: '/js/views/viewB.html'		
 	})
 	.state('viewC', {
 		url: '/viewC',
