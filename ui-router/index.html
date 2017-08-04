@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="mainApp">
+<head>
+	<title>Angular JS UI-Router</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+	<!-- AngularJS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+	<!-- Scripts da aplicação -->
+	<script type="text/javascript" src="./js/app.js"></script>
+	<script type="text/javascript" src="./js/controllers/mainController.js"></script>
+</head>
+<body class="container" ng-controller="MainController">
+	<h1 >AngularJS - UI-Router</h1>
+	<a ui-sref="main" ui-sref-active="btn-success" class="btn btn-primary">Main</a>
+	<a ui-sref="viewA" ui-sref-active="btn-success" class="btn btn-primary">View A</a>
+	<a ui-sref="viewB" ui-sref-active="btn-success" class="btn btn-primary">View B</a>
+	<a ui-sref="viewC" ui-sref-active="btn-success" class="btn btn-primary">View C</a>
+
+	<ui-view></ui-view>
+</body>
+</html>
