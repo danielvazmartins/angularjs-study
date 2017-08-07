@@ -3,17 +3,26 @@
 // Se não passar o segundo parâmetro então o modulo existente é instanciado.
 var app = angular.module('mainApp', ['ui.router']);
 
+app.service('Colors', function() {
+	this.getColors = function() {
+		return {'colors': 'azul'};
+	}
+});
+
 app.config(function($stateProvider) {
 	$stateProvider
 	.state('main', {
 		url: '/',
 		templateUrl: '/js/views/main.html',
 		controller: 'MainController',
-		resolve: {
+		resolve: function(Colors) {
+			return Colors.getColors();
+		}
+		/*resolve: {
 			colors: function() {
 				return {'colors': 'azul'}
 			}
-		}
+		}*/
 	})
 	.state('viewA', {
 		url: '/viewA',
