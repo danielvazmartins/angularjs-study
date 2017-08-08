@@ -1,5 +1,4 @@
-app.controller('MainController', function($scope, colors) {
-	console.log("MainController");
-	//console.log(colors);	
-	//$scope.colors = colors;
+app.controller('MainController', function($scope, colors, sizes) {	
+	$scope.colors = colors;
+	$scope.sizes = sizes;
 });

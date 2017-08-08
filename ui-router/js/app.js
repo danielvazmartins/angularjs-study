@@ -5,7 +5,7 @@ var app = angular.module('mainApp', ['ui.router']);
 
 app.service('Colors', function() {
 	this.getColors = function() {
-		return {'colors': 'azul'};
+		return {value: ['azul', 'amarelo', 'roxo']};
 	}
 });
 
@@ -15,14 +15,14 @@ app.config(function($stateProvider) {
 		url: '/',
 		templateUrl: '/js/views/main.html',
 		controller: 'MainController',
-		resolve: function(Colors) {
-			return Colors.getColors();
-		}
-		/*resolve: {
-			colors: function() {
-				return {'colors': 'azul'}
+		resolve: {
+			colors: function(Colors) {
+				return Colors.getColors();
+			},
+			sizes: function() {
+				return {value: ['P', 'M', 'G']}
 			}
-		}*/
+		}
 	})
 	.state('viewA', {
 		url: '/viewA',
