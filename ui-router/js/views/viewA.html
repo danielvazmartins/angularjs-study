@@ -1,6 +1,7 @@
 <h3>View A</h3>
+<p>Criando links passando parâmetros para outra rota</p>
 <ul class="list-group">
 	<li class="list-group-item" ng-repeat="macro in macros.macro">
-		<a>{{macro.name}}</a>
+		<a ui-sref="viewADetail({macroId: macro.id})">{{macro.name}}</a>
 	</li>
 </ul>

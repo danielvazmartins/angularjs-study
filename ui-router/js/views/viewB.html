@@ -1,2 +1,7 @@
 <h3>View B</h3>
-{{colors}}
+<ul class="list-group">
+	<li class="list-group-item" ng-repeat="macro in macros.macro">
+		<a ui-sref="viewB.detail({macroId: macro.id})">{{macro.name}}</a>
+	</li>
+</ul>
+<ui-view></ui-view>

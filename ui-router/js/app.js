@@ -33,8 +33,7 @@ app.config(function($stateProvider) {
 		templateUrl: '/js/views/viewA.html',
 		controller: 'ViewAController',
 		resolve: {
-			macros: function() {
-				console.log("resolve macros");			
+			macros: function() {		
 				return { macro: [
 					{id: 1, name: 'Proteina'},
 					{id: 2, name: 'Carboidrato'},
@@ -45,11 +44,57 @@ app.config(function($stateProvider) {
 	})
 	.state('viewADetail', {
 		url: '/viewA/{macroId}',
-		templateUrl: '/js/views/viewADetail.html'
+		templateUrl: '/js/views/viewADetail.html',
+		controller: 'ViewADetailController',
+		resolve: {
+			alimentos: function($stateParams) {
+				switch( parseInt($stateParams.macroId) ) {
+					case 1:
+						return { alimentos: [
+							{id: 1, name: 'Frango'},
+							{id: 2, name: 'Carne'},
+							{id: 3, name: 'Peixe'}
+						]}
+						break;
+					case 2:
+						return { alimentos: [
+							{id: 4, name: 'Arroz'},
+							{id: 5, name: 'Macarrão'},
+							{id: 6, name: 'Batata'}
+						]}
+						break;
+					case 3:
+						return { alimentos: [
+							{id: 7, name: 'Azeite'},
+							{id: 8, name: 'Abacate'},
+							{id: 9, name: 'Gema do Ovo'}
+						]}
+						break;
+					default:
+						return { alimentos: []}
+				}
+			}
+		}
 	})
 	.state('viewB', {
 		url: '/viewB',
-		templateUrl: '/js/views/viewB.html'		
+		templateUrl: '/js/views/viewB.html',
+		controller: 'ViewBController',
+		resolve: {
+			macros: function(Macros) {
+				return Macros.getMacros();
+			}
+		}
+	})
+	.state('viewB.detail', {
+		url: '{macroId}',
+		templateUrl: '/js/views/viewBDetail.html',
+		controller: 'ViewBDetailController',
+		resolve: {
+			alimentos: function(Macros, $stateParams) {
+				return Macros.getAlimentos($stateParams.macroId);
+			}
+		}
 	})
 	.state('viewC', {
 		url: '/viewC',
