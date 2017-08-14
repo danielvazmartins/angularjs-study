@@ -98,6 +98,6 @@ app.config(function($stateProvider) {
 	})
 	.state('viewC', {
 		url: '/viewC',
-		templateUrl: '/js/views/viewC.html'
+		component: 'viewCComponent'
 	});
 });
