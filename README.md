@@ -1,5 +1,5 @@
 ### angularjs-study
-Repositório com exemplos para estudar e testar o angular
+Repositório com exemplos para estudar e testar o AngularJS (v1)
 
 Alguns projetos precisam ser executados através de um servidor web, estou utilizando o http-server
 # Instalar o http-server global
@@ -16,6 +16,12 @@ Utilizando o ngRoute para contruir uma SPA (Single Page Application)
 
 ## ui-router
 Utilizando o UI-Router para contruir uma SPA (Single Page Application)
+
+## mascaras
+Projeto para estudar alguns tipos de implementações de mascaras
+
+## AngularJS Material
+Projeto para estudar e testar os recursos do framework do Material Designer para o AngularJS
 
 ## Projetos para verificar
 -- http - https://www.w3schools.com/angular/angular_http.asp
