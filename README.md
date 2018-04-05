@@ -20,8 +20,11 @@ Utilizando o UI-Router para contruir uma SPA (Single Page Application)
 ## mascaras
 Projeto para estudar alguns tipos de implementações de mascaras
 
-## AngularJS Material
+## angular-material
 Projeto para estudar e testar os recursos do framework do Material Designer para o AngularJS
+
+## ui-bootstrap
+Projeto para estudar e testar os recusros do framework do Bootstrap para o AngularJS
 
 ## Projetos para verificar
 -- http - https://www.w3schools.com/angular/angular_http.asp
