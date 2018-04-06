@@ -29,3 +29,4 @@ Projeto para estudar e testar os recusros do framework do Bootstrap para o Angul
 ## Projetos para verificar
 -- http - https://www.w3schools.com/angular/angular_http.asp
 -- restangular - https://github.com/mgonto/restangular
+-- angular-momment-picker - https://indrimuska.github.io/angular-moment-picker/

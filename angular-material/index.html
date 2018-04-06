@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.8/angular-material.min.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body ng-controller="MainController">
 
@@ -38,7 +39,21 @@
 					<md-icon>home</md-icon>
 					<md-divider></md-divider>
 					<h2 class="md-subhead">Datepicker</h2>			
-					<md-datepicker ng-model="birthday"></md-datepicker>			
+					<md-datepicker ng-model="birthday" md-open-on-focus></md-datepicker>
+					<md-divider></md-divider>
+					<h2 class="md-subhead">Select</h2>		
+					<md-input-container>	
+						<md-select ng-model="select">
+							<md-option ng-value="opt1">Opção 1</md-option>
+							<md-option ng-value="opt2">Opção 2</md-option>
+							<md-option ng-value="opt3">Opção 3</md-option>
+						</md-select>
+					</md-input-container>
+					<select>
+						<option>Opção 1</option>
+						<option>Opção 2</option>
+						<option>Opção 3</option>
+					</select>
 					<md-divider></md-divider>
 					<h2 class="md-subhead">Dialog</h2>
 					<md-button class="md-raised md-primary" ng-click="showAlert()">Show Alert</md-button>
