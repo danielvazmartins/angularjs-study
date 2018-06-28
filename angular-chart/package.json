@@ -1,0 +1,15 @@
+{
+  "name": "angular-chart",
+  "version": "1.0.0",
+  "description": "Angular Chart",
+  "main": "index.html",
+  "dependencies": {
+    "angular-chart.js": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Vaz Villalobos Martins",
+  "license": "ISC"
+}

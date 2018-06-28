@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="mainApp">
+<head>
+	<title>Angular Chart</title>
+</head>
+<body ng-controller="MainController">
+
+	<h3>Bar Chart</h3>
+	<canvas id="bar-chart" class="chart chart-bar" chart-data="barChart.data" chart-labels="barChart.labels" chart-colors="barChart.colors" chart-options="barChart.options"></canvas>
+
+	<!-- AngularJS -->	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular.min.js"></script>
+	<!-- Angular Chart -->
+	<script src="node_modules/chart.js/dist/Chart.min.js"></script>
+	<script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+	<!-- Scripts da aplicação -->
+	<script type="text/javascript" src="/js/app.js"></script>
+	<script type="text/javascript" src="/js/controllers/mainController.js"></script>
+</body>
+</html>
