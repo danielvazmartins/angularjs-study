@@ -26,7 +26,7 @@ Projeto para estudar e testar os recursos do framework do Material Designer para
 ## ui-bootstrap
 Projeto para estudar e testar os recusros do framework do Bootstrap para o AngularJS
 
-# angular-chart
+## angular-chart
 Projeto para estudar e testar a construção de gráficos utilizando o Angular Chart
 
 ## Projetos para verificar
